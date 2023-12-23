@@ -1,0 +1,20 @@
+{% extends 'mainapp/layout.html' %}
+{% block header %}
+
+<main>
+    <div class="dropdown">
+        <input type="checkbox" id="toggle">
+        <label for="toggle" id="list-tress">Список деревьев</label>
+        <div class="dropdown-content">
+          <a href="#" name="topol">Тополь</a>
+          <a href="#" name="tree2">Береза</a>
+          <a href="#" name="1234">1234</a>
+
+        </div>
+       </div>
+</main>
+<div id="content">
+</div>
+<button id="scrollToTopButton">Наверх</button>
+
+{% endblock %}
