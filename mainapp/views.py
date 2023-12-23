@@ -15,6 +15,8 @@ def change_template(request):
         link_name = request.POST.get('link_name')
         if link_name == 'topol':
             template = get_template('mainapp/topol.html')
+        if link_name == 'bereza':
+            template = get_template('mainapp/bereza.html')
         html = template.render()
         return HttpResponse(html)
     elif request.method == 'GET':
