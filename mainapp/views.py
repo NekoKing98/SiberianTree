@@ -19,6 +19,8 @@ def change_template(request):
             template = get_template('mainapp/bereza.html')
         if link_name == 'pihta-sib':
             template = get_template('mainapp/pihta-sib.html')
+        if link_name == 'listvennica':
+            template = get_template('mainapp/listvennica.html')
         html = template.render()
         return HttpResponse(html)
     elif request.method == 'GET':
