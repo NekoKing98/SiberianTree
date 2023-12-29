@@ -25,6 +25,8 @@ def change_template(request):
             template = get_template('mainapp/iva.html')
         if link_name == 'elka':
             template = get_template('mainapp/elka.html')
+        if link_name == 'osina':
+            template = get_template('mainapp/osina.html')
         html = template.render()
         return HttpResponse(html)
     elif request.method == 'GET':
