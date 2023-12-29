@@ -23,6 +23,8 @@ def change_template(request):
             template = get_template('mainapp/listvennica.html')
         if link_name == 'iva':
             template = get_template('mainapp/iva.html')
+        if link_name == 'elka':
+            template = get_template('mainapp/elka.html')
         html = template.render()
         return HttpResponse(html)
     elif request.method == 'GET':
